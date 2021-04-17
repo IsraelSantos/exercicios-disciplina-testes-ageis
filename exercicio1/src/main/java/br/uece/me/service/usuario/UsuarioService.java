@@ -23,7 +23,7 @@ public class UsuarioService {
 	public void validarCartaoDeCredito(Usuario usuario) {
 			
 			if(Objects.isNull(usuario.getCartaoCredito()))
-				throw new RuntimeException("Cartão de crédito o brigatório");
+				throw new RuntimeException("Cartão de crédito obrigatório");
 	
 			if(!ValidaCartaoCreditoUltil.isCartaoValido( usuario.getCartaoCredito().getNumero() ) )
 				throw new RuntimeException("Cartão de crédito inválido");
