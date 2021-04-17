@@ -26,12 +26,12 @@ Critérios de aceitação:
 Critérios de aceitação:
 - O administrador do sistema deve incluir os dados necessários para funcionar a estação (nome, endereço, contato) e selecionar a zona tarifária da estação (Zona A e Zona B);
 
-**US03: COMO usuário EU preciso passar o cartão na catraca PARA registrar minha viagem;**
+**US03: COMO usuário EU PRECISO passar o cartão na catraca PARA registrar minha viagem;**
 
 Critérios de aceitação:
 - Cada vez que o usuário entra e sai do metrô o sistema deve registrar data de entrada/saida e estação/zona tarifária da Viagem;
 
-**US04: COMO Sistema EU irei calcular o valor que o usuário vai pagar PARA realizar cobrança devida com base no uso do metrô;**
+**US04: COMO Sistema EU DEVO calcular o valor que o usuário vai pagar PARA realizar cobrança devida com base no uso do metrô;**
 
 Critérios de aceitação:
 - A tarifa de um dia inclui todas as viagens individuais feitas em um único dia;
