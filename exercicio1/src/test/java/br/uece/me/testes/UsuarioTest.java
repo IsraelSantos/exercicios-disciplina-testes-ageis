@@ -26,7 +26,7 @@ public class UsuarioTest {
 		usuario.setTarifa(null);
 		
 		Exception exception = assertThrows(RuntimeException.class, () -> usuarioService.validarInclusaoUsuario(usuario));
-		assertEquals("Tarifa inválida", exception.getMessage(), "Erro: Tarifa inválida!");
+		assertEquals("Tarifa inválida", exception.getMessage(), "Erro ao validar inclusao de usuario");
 		
 	}	
 	
@@ -38,7 +38,7 @@ public class UsuarioTest {
 		usuario.setCartaoCredito(null);
 		
 		Exception exception = assertThrows(RuntimeException.class, () -> usuarioService.validarCartaoDeCredito(usuario));
-		assertEquals("Cartão de crédito o brigatório", exception.getMessage(), "Erro: Cartão de crédito nulo");
+		assertEquals("Cartão de crédito obrigatório", exception.getMessage(), "Erro na operação 'usuarioService.validarCartaoDeCredito()'");
 	}
     
 	
@@ -50,7 +50,7 @@ public class UsuarioTest {
 		usuario.getCartaoCredito().setNumero("123");
 		
 		Exception exception = assertThrows(RuntimeException.class, () -> usuarioService.validarCartaoDeCredito(usuario));
-		assertEquals("Cartão de crédito inválido", exception.getMessage(), "Erro: Cartão de crédito inválido");	
+		assertEquals("Cartão de crédito inválido", exception.getMessage(), "Erro na operação 'usuarioService.validarCartaoDeCredito()'");	
 		
 	}
 	
