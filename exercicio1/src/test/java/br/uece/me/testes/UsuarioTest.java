@@ -62,7 +62,8 @@ public class UsuarioTest {
 		//assertEquals(esperado, atual, numero + " nao é primo");
 		fail();
 	}
-
+    
+	
 	@DisplayName("O cartão de crédito deve ser validado")
 	@Test
 	public void testeCartaoValido(){

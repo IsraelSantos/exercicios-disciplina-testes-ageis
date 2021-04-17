@@ -9,8 +9,7 @@ import br.uece.me.model.enumeration.Tarifa;
 public class UsuarioMock {
 
 	public static  Usuario newUsuario() {
-		Usuario usuario;
-		usuario = new Usuario();
+		Usuario usuario = new Usuario();
 		usuario.setNome("Fulano");
 		usuario.setCpf("98605121084");
 		
