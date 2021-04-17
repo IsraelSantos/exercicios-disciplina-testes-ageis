@@ -1,6 +1,8 @@
-package br.uece.me.model;
+package br.uece.me.service;
 
 import java.util.Objects;
+
+import br.uece.me.model.Estacao;
 
 public class EstacaoService {
 

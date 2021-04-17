@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Test;
 
 import br.uece.me.mock.EstacaoMock;
 import br.uece.me.model.Estacao;
-import br.uece.me.model.EstacaoService;
+import br.uece.me.service.EstacaoService;
 
 /**
  * US02: COMO o administrador do sistema EU PRECISO cadastrar estações PARA identificar a zona tarifária de cada uma

@@ -1,4 +1,4 @@
-package br.uece.me.service.usuario;
+package br.uece.me.service;
 
 import java.util.Objects;
 

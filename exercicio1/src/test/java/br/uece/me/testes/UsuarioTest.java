@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Test;
 
 import br.uece.me.mock.UsuarioMock;
 import br.uece.me.model.Usuario;
-import br.uece.me.service.usuario.UsuarioService;
+import br.uece.me.service.UsuarioService;
 
 /**
  * US01: COMO um usuário EU PRECISO me cadastrar no sistema PARA que eu possa utilizar o metrô
