@@ -12,6 +12,7 @@ import br.uece.me.service.UsuarioService;
 
 /**
  * US01: COMO um usuário EU PRECISO me cadastrar no sistema PARA que eu possa utilizar o metrô
+ * @author marcos.eduardo
  * @author israel.santos
  */
 public class UsuarioTest {
