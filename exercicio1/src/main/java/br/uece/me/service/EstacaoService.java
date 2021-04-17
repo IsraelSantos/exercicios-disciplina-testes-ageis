@@ -18,8 +18,6 @@ public class EstacaoService {
 		
 		if(Objects.isNull(estacao.getZona()))
 			throw new RuntimeException("Obrigatório informar a Zona");		
-		
-		
 	}
 
 }
