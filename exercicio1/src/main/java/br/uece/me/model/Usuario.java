@@ -1,6 +1,5 @@
 package br.uece.me.model;
 
-import java.util.Objects;
 import java.util.UUID;
 
 import br.uece.me.model.enumeration.Tarifa;

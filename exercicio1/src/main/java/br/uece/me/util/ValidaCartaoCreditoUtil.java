@@ -2,7 +2,7 @@ package br.uece.me.util;
 
 import java.util.Objects;
 
-public class ValidaCartaoCreditoUltil {
+public class ValidaCartaoCreditoUtil {
 
 	public static boolean isCartaoValido(String numero) {
 		

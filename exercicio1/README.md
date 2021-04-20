@@ -19,17 +19,22 @@
 Critérios de aceitação:
 - O usuário deve escolher qual tarifa vai usar (única, diária, semanal, mensal);
 - O usuário deve cadastrar o cartão de crédito no sistema;
-- O cartão de crédito deve ser validado;
+- O cartão de crédito deve ser validado.
 
 **US02: COMO o administrador do sistema EU PRECISO cadastrar estações PARA identificar a zona tarifária de cada uma**
 
 Critérios de aceitação:
-- O administrador do sistema deve incluir os dados necessários para funcionar a estação (nome, endereço, contato) e selecionar a zona tarifária da estação (Zona A e Zona B);
+- O administrador do sistema deve incluir os dados necessários para funcionar a estação (nome, endereço, contato) e selecionar a zona tarifária da estação (Zona A e Zona B).
 
 **US03: COMO usuário EU PRECISO passar o cartão na catraca PARA registrar minha viagem;**
 
 Critérios de aceitação:
-- Cada vez que o usuário entra e sai do metrô o sistema deve registrar data de entrada/saida e estação/zona tarifária da Viagem;
+
+- Cada vez que o usuário entra no metrô o sistema deve registrar data de entrada na Viagem;
+- Cada vez que o usuário entra no metrô o sistema deve registrar a estação/zona tarifária de embarque na Viagem;
+- Cada vez que o usuário sai do metrô o sistema deve registrar a estação/zona tarifária de desembarque na Viagem;
+- Cada vez que o usuário sai do metrô o sistema deve registrar data de desembarque na Viagem;
+- Ao registrar o desembarque o horário nunca deve ser anterior ao de embarque.
 
 **US04: COMO Sistema EU DEVO calcular o valor que o usuário vai pagar PARA realizar cobrança devida com base no uso do metrô;**
 
@@ -37,4 +42,4 @@ Critérios de aceitação:
 - A tarifa de um dia inclui todas as viagens individuais feitas em um único dia;
 - A tarifa de uma semana inclui todas as viagens individuais feitas em uma única semana;
 - A tarifa de um mês inclui todas as viagens individuais feitas em um único mês
-- Não importa quantas viagens sejam feitas dentro de um dos limites de tempo de uma zona específica, o preço será limitado à tarifa daquele período de tempo;
+- Não importa quantas viagens sejam feitas dentro de um dos limites de tempo de uma zona específica, o preço será limitado à tarifa daquele período de tempo.

@@ -3,7 +3,7 @@ package br.uece.me.service;
 import java.util.Objects;
 
 import br.uece.me.model.Usuario;
-import br.uece.me.util.ValidaCartaoCreditoUltil;
+import br.uece.me.util.ValidaCartaoCreditoUtil;
 
 
 public class UsuarioService {
@@ -25,7 +25,7 @@ public class UsuarioService {
 			if(Objects.isNull(usuario.getCartaoCredito()))
 				throw new RuntimeException("Cartão de crédito obrigatório");
 	
-			if(!ValidaCartaoCreditoUltil.isCartaoValido( usuario.getCartaoCredito().getNumero() ) )
+			if(!ValidaCartaoCreditoUtil.isCartaoValido( usuario.getCartaoCredito().getNumero() ) )
 				throw new RuntimeException("Cartão de crédito inválido");
 	
 	}
