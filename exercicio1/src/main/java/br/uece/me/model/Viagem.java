@@ -18,6 +18,8 @@ public class Viagem {
 	
 	private Date dataDesembarque;
 	
+	private Usuario usuario;
+	
 	public Viagem() {
 		this.id = UUID.randomUUID();
 	}
