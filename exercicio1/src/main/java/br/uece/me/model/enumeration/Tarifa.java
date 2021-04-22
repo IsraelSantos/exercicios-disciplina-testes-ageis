@@ -14,7 +14,15 @@ public enum Tarifa {
 	
 	Tarifa(String nome, BigDecimal valorZonaA, BigDecimal valorZonaB){
 		this.nome = nome;
-		this.valorZonaA = valorZonaB;
+		this.valorZonaA = valorZonaA;
 		this.valorZonaB = valorZonaB;
+	}
+
+	public BigDecimal getValorZonaA() {
+		return this.valorZonaA;
+	}
+
+	public BigDecimal getValorZonaB() {
+		return this.valorZonaB;
 	}
 }

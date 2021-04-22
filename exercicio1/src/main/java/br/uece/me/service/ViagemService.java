@@ -15,6 +15,9 @@ public class ViagemService {
 		if(Objects.isNull(viagem.getEstacaoEmbarque()))
 			throw new RuntimeException("Estacao de embarque é obrigatória no início da viagem");
 		
+		if(Objects.isNull(viagem.getUsuario()))
+			throw new RuntimeException("Usuário obrigatório no registro da viagem");
+		
 	}
 
 	public void validarDesembarque(Viagem viagem) {

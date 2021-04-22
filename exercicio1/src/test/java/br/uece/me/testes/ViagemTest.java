@@ -75,4 +75,24 @@ public class ViagemTest {
 		assertEquals("Data de desembarque não pode ser anterior ao embarque", exception.getMessage(), "Erro ao validar desembarque - Data de desembarque não pode ser anterior ao embarque");
 	}
 
+	@DisplayName("A viagem deve registrar o usuário que a realizou no embarque")
+	@Test
+	public void testeUsuarioEmbarque(){
+		Viagem viagem = ViagemMock.newViagem();
+		viagem.setUsuario(null);
+		
+		Exception exception = assertThrows(RuntimeException.class, () -> viagemService.validarEmbarque(viagem));
+		assertEquals("Usuário obrigatório no registro da viagem", exception.getMessage(), "Erro ao validar viagem - Usuário obrigatório no registro da viagem");
+	}
+	
+	@DisplayName("A viagem deve registrar o usuário que a realizou no desembarque")
+	@Test
+	public void testeUsuarioDesembarque(){
+		Viagem viagem = ViagemMock.newViagem();
+		viagem.setUsuario(null);
+		
+		Exception exception = assertThrows(RuntimeException.class, () -> viagemService.validarDesembarque(viagem));
+		assertEquals("Usuário obrigatório no registro da viagem", exception.getMessage(), "Erro ao validar viagem - Usuário obrigatório no registro da viagem");
+	}
+
 }

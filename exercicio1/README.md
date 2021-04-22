@@ -36,10 +36,13 @@ Critérios de aceitação:
 - Cada vez que o usuário sai do metrô o sistema deve registrar data de desembarque na Viagem;
 - Ao registrar o desembarque o horário nunca deve ser anterior ao de embarque.
 
-**US04: COMO Sistema EU DEVO calcular o valor que o usuário vai pagar PARA realizar cobrança devida com base no uso do metrô;**
+**US04: COMO Sistema EU DEVO calcular o valor que o usuário vai pagar PARA realizar cobrança e registrar o pagamento devido com base no uso do metrô;**
 
 Critérios de aceitação:
+- O pagamento deve conter o valor;
+- O pagamento deve conter a abrangencia (zona tarifária);
+- A tarifa unica deve conter o valor de acordo com a zona tarifaria;
 - A tarifa de um dia inclui todas as viagens individuais feitas em um único dia;
 - A tarifa de uma semana inclui todas as viagens individuais feitas em uma única semana;
-- A tarifa de um mês inclui todas as viagens individuais feitas em um único mês
-- Não importa quantas viagens sejam feitas dentro de um dos limites de tempo de uma zona específica, o preço será limitado à tarifa daquele período de tempo.
+- A tarifa de um mês inclui todas as viagens individuais feitas em um único mês;
+- O pagamento deve ser calculado, efetuado e registrado.
