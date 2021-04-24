@@ -12,7 +12,9 @@
 	<artifactId>exercicio2</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<properties>
+	    <cucumber.version>6.8.1</cucumber.version>
 		<java.version>1.8</java.version>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 
 	<dependencies>
@@ -28,6 +30,20 @@
 			<version>1.18.20</version>
 			<scope>provided</scope>
 		</dependency>
+		
+		<dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-java</artifactId>
+            <version>${cucumber.version}</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-junit</artifactId>
+            <version>${cucumber.version}</version>
+            <scope>test</scope>
+        </dependency>
 
 	</dependencies>
 
