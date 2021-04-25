@@ -7,6 +7,7 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(features = "classpath:features", tags = "@ContaTeste",
-glue = "br.uece.me.cucumber.passos", monochrome = true, dryRun = false)
+glue = {"br.uece.me.cucumber.passos",
+	"br.uece.me.cucumber.me.config"}, monochrome = true, dryRun = false)
 public class ContaTeste {
 }

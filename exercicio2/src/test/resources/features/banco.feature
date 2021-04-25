@@ -16,4 +16,4 @@ Funcionalidade: Testar as operacoes basicas de banco
 
   Cenario: Verifica o total de dinheiro no banco
     Dado o calculo do total de dinheiro
-    Entao o total de dinheiro no banco e 500
+    Entao o total de dinheiro no banco e 500.0

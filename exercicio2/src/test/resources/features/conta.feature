@@ -17,5 +17,5 @@
 
 Exemplos:
 | dono |numero|limite|saldo|deposito|primeiro_saque|segundo_saque|saldo_esperado|
-|Brendo| 111  | 1000 | 0   | 100    | 10           | 10          | 80           |
-|Hiago | 222  | 1000 | 0   | 200    | 10           | 10          | 180          |
+|Brendo| 111  | 1000.0 | 0.0   | 100.0    | 10.0           | 10.0          | 80.0           |
+|Hiago | 222  | 1000.0 | 0.0   | 200.0    | 10.0           | 10.0          | 180.0          |
