@@ -1,4 +1,4 @@
-package br.uece.me.cucumber.me.config;
+package br.uece.me.cucumber.config;
 
 import static java.util.Locale.ENGLISH;
 
