@@ -1,5 +1,7 @@
 package br.uece.me.cucumber.me.config;
 
+import static java.util.Locale.ENGLISH;
+
 import java.lang.reflect.Type;
 import java.util.Locale;
 import java.util.Map;
@@ -15,7 +17,7 @@ public class TypeRegistryConfig implements TypeRegistryConfigurer {
 
   @Override
   public Locale locale() {
-    return new Locale("pt","BR");
+    return ENGLISH;
   }
 
   @Override
