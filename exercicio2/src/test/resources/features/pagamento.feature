@@ -29,7 +29,7 @@
     	Entao o valor do pagamento será 6
 
 # O ultimo pagamento do próximo cenario ocorreu na zona A com valor 6, o pagamento deve ser a diferença entre o valor do pagamento atual e o último
-    Esquema do Cenario: Testar pagamento criado com mesma tarifa de varias viagens
+    Esquema do Cenario: Testar pagamento criado com tarifa DIARIO, SEMANAL e MENSAL
     	Dado a criação de uma nova viagem com tarifa "<tarifa>" e zona "<zona>" com viagens anteriores na mesma tarifa "<viagens>"
     	Entao o valor do pagamento será <valor>
 		Exemplos:
