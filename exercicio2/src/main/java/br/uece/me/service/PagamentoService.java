@@ -43,7 +43,7 @@ public class PagamentoService {
 			if (!Objects.isNull(ultimoPagamento) && 
 					Zona.A.equals(ultimoPagamento.getAbrangencia()) &&
 					Zona.B.equals(abrangencia)) {
-				BigDecimal diferenca = tarifa.getValorZonaB().subtract(tarifa.getValorZonaA());
+				BigDecimal diferenca = tarifa.getValorZonaB().subtract(ultimoPagamento.getValor());
 				return diferenca;
 			}else {
 				return new BigDecimal(0);

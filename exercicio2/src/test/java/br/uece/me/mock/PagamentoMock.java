@@ -5,6 +5,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 import br.uece.me.model.Pagamento;
+import br.uece.me.model.Usuario;
 import br.uece.me.model.enumeration.Zona;
 
 public class PagamentoMock {
@@ -13,6 +14,7 @@ public class PagamentoMock {
 		Pagamento res = new Pagamento();
 		res.setValor(new BigDecimal(6));
 		res.setAbrangencia(Zona.A);
+		res.setUsuario(new Usuario());
 		return res;
 	}
 
