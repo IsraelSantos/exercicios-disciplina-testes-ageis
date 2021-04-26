@@ -41,6 +41,7 @@ Critérios de aceitação:
 Critérios de aceitação:
 - O pagamento deve conter o valor;
 - O pagamento deve conter a abrangencia (zona tarifária);
+- O pagamento deve conter o usuário que realizou;
 - A tarifa unica deve conter o valor de acordo com a zona tarifaria;
 - A tarifa de um dia inclui todas as viagens individuais feitas em um único dia;
 - A tarifa de uma semana inclui todas as viagens individuais feitas em uma única semana;
