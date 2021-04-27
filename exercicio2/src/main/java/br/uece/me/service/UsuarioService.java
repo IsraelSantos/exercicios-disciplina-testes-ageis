@@ -10,24 +10,44 @@ public class UsuarioService {
 	
 	public void validarInclusaoUsuario(Usuario usuario) {
 		
-		validarCartaoDeCredito(usuario);
-		
-		if(Objects.isNull(usuario.getNome()))
-			throw new RuntimeException("Nome é obrigatório");
-		
-		if(Objects.isNull(usuario.getTarifa()))
-			throw new RuntimeException("Tarifa inválida");
+		if(Objects.isNull(usuario.getNome()) || usuario.getNome().trim().equals("")  )
+			throw new RuntimeException("Obrigatório informar o nome");
+
+		else if(Objects.isNull(usuario.getTarifa()))
+			throw new RuntimeException("Obrigatório informar a tarifa");
+		else if(Objects.isNull(usuario.getCpf())  || usuario.getCpf().trim().equals(""))
+			throw new RuntimeException("Obrigatório informar o CPF");
+		else
+			validarCartaoDeCredito(usuario);
 		
 	}
 
 	public void validarCartaoDeCredito(Usuario usuario) {
 			
-			if(Objects.isNull(usuario.getCartaoCredito()))
-				throw new RuntimeException("Cartão de crédito obrigatório");
+			if(Objects.isNull(usuario.getCartaoCredito()) || usuario.getCartaoCredito().getNumero().trim().equals(""))
+				throw new RuntimeException("Obrigatório informar o cartao de crédito");
 	
-			if(!ValidaCartaoCreditoUtil.isCartaoValido( usuario.getCartaoCredito().getNumero() ) )
+			else if(!ValidaCartaoCreditoUtil.isCartaoValido( usuario.getCartaoCredito().getNumero() ) )
 				throw new RuntimeException("Cartão de crédito inválido");
 	
 	}
+
+	public String salvar(Usuario usuario) {
+		validarInclusaoUsuario(usuario);
+		return "Operação realizada com sucesso";
+		//TODO SALVAR USUÁRIO
+	}
 	
+	
+	public String editar(Usuario usuario) {
+		validarInclusaoUsuario(usuario);
+		return "Operação realizada com sucesso";
+		//TODO EDITAR USUÁRIO
+	}
+	
+	public String remover(Usuario usuario) {
+		validarInclusaoUsuario(usuario);
+		return "Operação realizada com sucesso";
+		//TODO EDITAR USUÁRIO
+	}
 }

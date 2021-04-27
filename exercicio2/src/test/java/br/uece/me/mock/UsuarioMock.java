@@ -23,5 +23,7 @@ public class UsuarioMock {
 		usuario.getCartaoEmbarque().setCodigo("5");
 		return usuario;
 	}
+	
+	
 
 }
