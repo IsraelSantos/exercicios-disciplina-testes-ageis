@@ -17,9 +17,10 @@
 **US01: COMO um usuário EU PRECISO me cadastrar no sistema PARA que eu possa utilizar o metrô;**
 
 Critérios de aceitação:
+- O usuário deve informar o nome, cpf e cartão de crédito
+- O cartão de crédito deve ser válido.
 - O usuário deve escolher qual tarifa vai usar (única, diária, semanal, mensal);
 - O usuário deve cadastrar o cartão de crédito no sistema;
-- O cartão de crédito deve ser validado.
 
 **US02: COMO o administrador do sistema EU PRECISO cadastrar estações PARA identificar a zona tarifária de cada uma**
 
