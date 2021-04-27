@@ -1,5 +1,5 @@
 # language: pt
-  @PagamentoTeste
+  @ViagemTeste
   Funcionalidade: Cadastro de viagem
     US03: COMO usuário EU PRECISO passar o cartão na catraca PARA registrar minha viagem;
 		Critérios de aceitação:
