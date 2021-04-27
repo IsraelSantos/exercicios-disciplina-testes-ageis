@@ -19,7 +19,7 @@
 		  | Maria    | 1 		           |                  | 35420898004 | DIARIO  | incluir  | erro | Obrigatório informar o cartao de crédito |
 		  | João     | 1 		           | 5137366810814608 |             | DIARIO  | incluir  | erro | Obrigatório informar o CPF |
 		  | Xuxa     | 1 		           | 5137366810814608 | 35420898004 |         | incluir  | erro | Obrigatório informar a tarifa |
-		  | Brendo   |   		           | 5137366810814608 | 35420898004 | DIARIO  | incluir  | sucesso | Operação realizada com sucesso |
-		  | Angélica | 1 		           | 5137366810814608 | 35420898004 | DIARIO  | incluir  | sucesso | Operação realizada com sucesso |
-		  | Eliane   | 2			         | 5137366810814608 | 35420898004 | SEMANAL | editar   | sucesso | Operação realizada com sucesso |
-		  | Faustão  | 2			         | 5137366810814608 | 35420898004 | SEMANAL | remover  | sucesso | Operação realizada com sucesso |
+		  | Brendo   |   		           | 5137366810814608 | 35420898004 | DIARIO  | incluir  | sucesso | Operação incluir usuário realizada com sucesso |
+		  | Angélica | 1 		           | 5137366810814608 | 35420898004 | DIARIO  | incluir  | sucesso | Operação incluir usuário realizada com sucesso |
+		  | Eliane   | 2			         | 5137366810814608 | 35420898004 | SEMANAL | editar   | sucesso | Operação editar usuário realizada com sucesso |
+		  | Faustão  | 2			         | 5137366810814608 | 35420898004 | SEMANAL | remover  | sucesso | Operação remover usuário realizada com sucesso |

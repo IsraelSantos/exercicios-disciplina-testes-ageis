@@ -8,6 +8,28 @@ import br.uece.me.util.ValidaCartaoCreditoUtil;
 
 public class UsuarioService {
 	
+
+	public String salvar(Usuario usuario) {
+		validarInclusaoUsuario(usuario);
+		return "Operação incluir usuário realizada com sucesso";
+		//TODO SALVAR USUÁRIO
+	}
+	
+	public String editar(Usuario usuario) {
+		validarEdicaoUsuario(usuario);
+		return "Operação editar usuário realizada com sucesso";
+		//TODO EDITAR USUÁRIO
+	}
+	
+	public String remover(Usuario usuario) {
+		return "Operação remover usuário realizada com sucesso";
+		//TODO EDITAR USUÁRIO
+	}
+	
+	public void validarEdicaoUsuario(Usuario usuario) {
+		validarInclusaoUsuario(usuario);
+	}
+	
 	public void validarInclusaoUsuario(Usuario usuario) {
 		
 		if(Objects.isNull(usuario.getNome()) || usuario.getNome().trim().equals("")  )
@@ -21,7 +43,7 @@ public class UsuarioService {
 			validarCartaoDeCredito(usuario);
 		
 	}
-
+	
 	public void validarCartaoDeCredito(Usuario usuario) {
 			
 			if(Objects.isNull(usuario.getCartaoCredito()) || usuario.getCartaoCredito().getNumero().trim().equals(""))
@@ -32,22 +54,6 @@ public class UsuarioService {
 	
 	}
 
-	public String salvar(Usuario usuario) {
-		validarInclusaoUsuario(usuario);
-		return "Operação realizada com sucesso";
-		//TODO SALVAR USUÁRIO
-	}
+
 	
-	
-	public String editar(Usuario usuario) {
-		validarInclusaoUsuario(usuario);
-		return "Operação realizada com sucesso";
-		//TODO EDITAR USUÁRIO
-	}
-	
-	public String remover(Usuario usuario) {
-		validarInclusaoUsuario(usuario);
-		return "Operação realizada com sucesso";
-		//TODO EDITAR USUÁRIO
-	}
 }
