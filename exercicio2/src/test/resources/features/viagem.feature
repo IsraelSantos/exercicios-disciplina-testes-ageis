@@ -1,6 +1,6 @@
 # language: pt
   @PagamentoTeste
-  Funcionalidade: Testar o cadastro de viagem
+  Funcionalidade: Cadastro de viagem
     US03: COMO usuário EU PRECISO passar o cartão na catraca PARA registrar minha viagem;
 		Critérios de aceitação:
 		- Cada vez que o usuário entra no metrô o sistema deve registrar data de entrada na Viagem;

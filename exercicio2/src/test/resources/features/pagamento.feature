@@ -1,6 +1,6 @@
 # language: pt
   @PagamentoTeste
-  Funcionalidade: Testar o cadastro e calculo de pagamento
+  Funcionalidade: Cadastro e calculo de pagamento
     COMO Sistema EU DEVO calcular o valor que o usuário vai pagar PARA realizar cobrança e registrar o pagamento devido com base no uso do metrô;
 			Critérios de aceitação:
 			- O pagamento deve conter o valor;
