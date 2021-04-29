@@ -26,5 +26,8 @@ hs_err_pid*
 /exercicio2/target/
 *.classpath
 *.project
-exercicio2/.settings/
-exercicio1/.settings/
+/exercicio2/.settings/
+/exercicio1/.settings/
+
+/exercicio3/target/
+/exercicio3/.settings/
