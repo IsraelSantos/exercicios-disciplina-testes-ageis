@@ -8,6 +8,9 @@ public class Aplication {
 	public static void main(String[] args) {
 		
 		String path = System.getProperty("user.dir");
+		
+		//Baixar esse driver no link
+		//https://chromedriver.storage.googleapis.com/index.html?path=90.0.4430.24/
 
     	System.setProperty("webdriver.chrome.driver",path+"\\driver\\chromedriver.exe");
     	WebDriver driver = new ChromeDriver();
