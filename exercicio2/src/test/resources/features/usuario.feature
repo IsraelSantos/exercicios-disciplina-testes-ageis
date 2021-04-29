@@ -8,7 +8,7 @@
 		O usuário deve escolher qual tarifa vai usar (única, diária, semanal, mensal);
 		O usuário deve cadastrar o cartão de crédito no sistema;
 		
-   Esquema do Cenario: "<operacao>" usuário com "<tipo_operacao>" - "<mensagem_esperada>"
+   Esquema do Cenario: Validar cadastro inclusao/edição/exclusão de usuário - "<mensagem_esperada>"
       Dado que é necessário validar com "<tipo_operacao>" ao "<operacao>" o usuário
       Quando os seguintes dados foram adicionados: nome "<nome>",  cartão de embarque "<cartao_embarque>", cartão de crédito "<cartao_credito>", CPF "<cpf>" e tarifa "<tarifa>"
       Entao o sistema retorna a seguinte mensagem "<mensagem_esperada>" 
