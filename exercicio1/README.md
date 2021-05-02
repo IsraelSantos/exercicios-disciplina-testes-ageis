@@ -4,7 +4,7 @@
  * Especialização Engenharia de Software com Devops
  * Profª: Ludmila Varela de Castro
  * Disciplina Testes Ágeis
- * Teste unitário - Sistema de Metrô
+ * Teste - Sistema de Metrô
  * @author marcos.eduardo
  * @author israel.santos
  
