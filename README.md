@@ -22,6 +22,10 @@ JDK 8 em diante;
 
 ## Como executar?
 
+Antes de executar o projeto 3 é necessário baixar o driver adequado à versão do seu Google Chrome no link: https://chromedriver.chromium.org/downloads
+
+O drive deve ser nomeado como chromedriver.exe e colocado no diretório /driver/ dentro do exercício3 
+
 Basta executar no diretório de cada projeto:
 
 `$ mvn test`
