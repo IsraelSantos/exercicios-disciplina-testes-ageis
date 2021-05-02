@@ -21,6 +21,8 @@ public class UsuarioMock {
 		
 		usuario.setCartaoEmbarque(new CartaoEmbarque());
 		usuario.getCartaoEmbarque().setCodigo("5");
+		usuario.setLogin("joao");
+		usuario.setSenha("lkldhfdolfh");
 		return usuario;
 	}
 

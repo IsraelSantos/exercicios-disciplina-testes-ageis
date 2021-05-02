@@ -4,7 +4,6 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 
 import br.uece.me.model.Usuario;
-import br.uece.me.repository.UsuarioRepository;
 import br.uece.me.service.UsuarioService;
 import cucumber.api.java8.Pt;
 
@@ -23,9 +22,11 @@ public class UsuarioTestePassos implements Pt{
 			 this.tipoOperacao = tipoOperacao;
 			 this.operacao = operacao;
 		});
-		Quando("os seguintes dados foram adicionados: nome {string},  cartão de embarque {string}, cartão de crédito {string}, CPF {string} e tarifa {string}", (String nome, String cartaoEmbarque, String cartaoCredito, String cpf,String tarifa) -> {
-			Usuario.addValores(usuario, nome, cartaoEmbarque, cartaoCredito, cpf, tarifa);
+		
+		Quando("os seguintes dados foram adicionados: nome {string},  cartão de embarque {string}, cartão de crédito {string}, CPF {string}, tarifa {string}, login {string} e senha {string}", (String nome, String cartaoEmbarque, String cartaoCredito, String cpf,String tarifa,String login,String senha) -> {
+			Usuario.addValores(usuario, nome, cartaoEmbarque, cartaoCredito, cpf, tarifa, login, senha);
 		});
+		
 		Entao("o sistema retorna a seguinte mensagem {string}", (String msg) -> {
 			
 			if(tipoOperacao.equals("sucesso"))

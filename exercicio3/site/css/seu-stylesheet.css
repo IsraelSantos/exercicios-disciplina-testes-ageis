@@ -1,0 +1,25 @@
+.login-css{ 
+	text-align: center; 
+}
+
+.container {
+	text-align: center; 
+}
+
+.text-contato {
+	font-size: 0.7em;
+}
+
+.text-copyright {
+	font-size: 0.7em;
+}
+
+.rodape {
+	height: 60px;
+	text-align: center;
+	width: 100%;
+	border-top: 5px;
+	padding: 15px 0;
+	color: #000000;
+	margin-bottom:0px;
+}

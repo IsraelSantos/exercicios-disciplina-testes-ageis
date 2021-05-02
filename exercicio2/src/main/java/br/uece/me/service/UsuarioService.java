@@ -40,6 +40,12 @@ public class UsuarioService {
 		else if(Objects.isNull(usuario.getCpf())  || usuario.getCpf().trim().equals(""))
 			throw new RuntimeException("Obrigatório informar o CPF");
 		else
+			if(Objects.isNull(usuario.getLogin()) || usuario.getLogin().trim().equals(""))
+				throw new RuntimeException("Login obrigatório");
+		else	
+			if(Objects.isNull(usuario.getSenha()) || usuario.getSenha().trim().equals(""))
+				throw new RuntimeException("Senha obrigatória");
+		else
 			validarCartaoDeCredito(usuario);
 		
 	}

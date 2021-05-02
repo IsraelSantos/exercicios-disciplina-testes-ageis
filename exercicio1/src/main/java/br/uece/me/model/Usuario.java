@@ -19,6 +19,10 @@ public class Usuario {
 	private String cpf;
 
 	private Tarifa tarifa;
+	
+	private String login;
+	
+	private String senha;
 
 	public Usuario() {
 		this.id = UUID.randomUUID();

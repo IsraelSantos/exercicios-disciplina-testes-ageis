@@ -55,4 +55,28 @@ public class UsuarioTest {
 		
 	}
 	
+	@DisplayName("O usuário deve cadastrar o login")
+	@Test
+	public void testeCadastroLogin(){
+
+		Usuario usuario = UsuarioMock.newUsuario();
+		usuario.setLogin(null);
+		
+		Exception exception = assertThrows(RuntimeException.class, () -> usuarioService.validarInclusaoUsuario(usuario));
+		assertEquals("Login obrigatório", exception.getMessage(), "Erro ao validar inclusao de usuario");	
+		
+	}
+	
+	@DisplayName("O usuário deve cadastrar a senha")
+	@Test
+	public void testeCadastroSenha(){
+
+		Usuario usuario = UsuarioMock.newUsuario();
+		usuario.setSenha(null);
+		
+		Exception exception = assertThrows(RuntimeException.class, () -> usuarioService.validarInclusaoUsuario(usuario));
+		assertEquals("Senha obrigatória", exception.getMessage(), "Erro ao validar inclusao de usuario");	
+		
+	}
+	
 }
