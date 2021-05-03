@@ -8,7 +8,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class LoginUsuarioTeste {
+public class LoginUsuarioTest {
 	
 	@Test
 	public void deveEfetuarLoginCorretamente() {
