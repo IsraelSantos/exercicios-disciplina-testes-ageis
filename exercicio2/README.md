@@ -4,7 +4,7 @@
  * Especialização Engenharia de Software com Devops
  * Profª: Ludmila Varela de Castro
  * Disciplina Testes Ágeis
- * Teste unitário - Sistema de Metrô
+ * Teste - Sistema de Metrô
  * @author marcos.eduardo
  * @author israel.santos
  
@@ -21,6 +21,8 @@ Critérios de aceitação:
 - O cartão de crédito deve ser válido.
 - O usuário deve escolher qual tarifa vai usar (única, diária, semanal, mensal);
 - O usuário deve cadastrar o cartão de crédito no sistema;
+- O usuário deve cadastrar o login;
+- O usuário deve cadastrar a senha;
 
 **US02: COMO o administrador do sistema EU PRECISO cadastrar estações PARA identificar a zona tarifária de cada uma**
 

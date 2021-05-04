@@ -18,6 +18,12 @@ public class UsuarioService {
 		if(Objects.isNull(usuario.getTarifa()))
 			throw new RuntimeException("Tarifa inválida");
 		
+		if(Objects.isNull(usuario.getLogin()))
+			throw new RuntimeException("Login obrigatório");
+		
+		if(Objects.isNull(usuario.getSenha()))
+			throw new RuntimeException("Senha obrigatória");
+		
 	}
 
 	public void validarCartaoDeCredito(Usuario usuario) {
